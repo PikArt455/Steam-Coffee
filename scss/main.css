@@ -12066,7 +12066,7 @@ h2, .h2 {
 }
 .allreservation .resa {
   background-color: #B6AC97;
-  margin-bottom: 1.5;
+  margin-bottom: 1.5px;
   transition: all 0.3s;
 }
 .allreservation a {
