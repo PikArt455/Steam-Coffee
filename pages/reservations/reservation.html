@@ -4,45 +4,99 @@
     </div>
 </div>
 <div class="container text-center allreservation">
-    <a href="#">
-        <span>01/01/2025</span> |
-        <span>14h30</span> |
-        <span>5 personnes</span> |
-        <span>Escape game</span> |
-    </a>
-    <a href="#">
-        <span>01/01/2025</span> |
-        <span>14h30</span> |
-        <span>5 personnes</span> |
-        <span>Escape game</span> |
-    </a>
-    <a href="#">
-        <span>01/01/2025</span> |
-        <span>14h30</span> |
-        <span>5 personnes</span> |
-        <span>Escape game</span> |
-    </a>
-    <a href="#">
-        <span>01/01/2025</span> |
-        <span>14h30</span> |
-        <span>5 personnes</span> |
-        <span>Escape game</span> |
-    </a>
-    <form>
-        <div class="mb-3">
-            <label for="NomInput" class="form-label">Nom de Réservation</label>
-            <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John Doe" name="Nom"> 
-        </div>
-        <div class="mb-3">
-          <label for="AllergieInput" class="form-label">Type d'activité</label>
-          <input type="text" class="form-control" id="AllergieInput" placeholder="Theme de la reservation(soirée privé, à theme ...)"  value="Soirée privé" name="Theme">  
-        </div>
-        <div class="mb-3">
-            <label for="NbConvivesInput" class="form-label">Nombres de participants</label>
-            <input type="number" class="form-control" id="NbConvivesInput" placeholder="Combien serez vous ?"  value="4" name="NbConvives"> 
-          </div>
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Réserver</button>
-        </div>
-    </form>
+    <div class="container resa rounded w-100">
+        <a href="#">
+            <span>Bourbon</span> |
+            <span>01/01/2025</span> |
+            <span>14h30</span> |
+            <span>5 personnes</span> |
+            <span>Escape game</span> 
+        </a>
+    </div>
 </div>
+<div class="container text-center allreservation">
+    <div class="container resa rounded w-100">
+        <a href="#">
+            <span>Bourbon</span> |
+            <span>01/01/2025</span> |
+            <span>14h30</span> |
+            <span>5 personnes</span> |
+            <span>Escape game</span> 
+        </a>
+    </div>
+</div>
+<div class="container text-center allreservation">
+    <div class="container resa rounded w-100">
+        <a href="#">
+            <span>Bourbon</span> |
+            <span>01/01/2025</span> |
+            <span>14h30</span> |
+            <span>5 personnes</span> |
+            <span>Escape game</span> 
+        </a>
+    </div>
+</div>
+<div class="container text-center allreservation">
+    <div class="container resa rounded w-100">
+        <a href="#">
+            <span>Bourbon</span> |
+            <span>01/01/2025</span> |
+            <span>14h30</span> |
+            <span>5 personnes</span> |
+            <span>Escape game</span> 
+        </a>
+    </div>
+</div class="container text-center">
+    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#EditeResaModal">Réserver</button>
+</div>
+
+    <!-- Modal edition -->
+<div class="modal fade" id="EditeResaModal" tabindex="-1" aria-labelledby="EditeResaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditeResaModalLabel">Reserver votre évenements</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="NomInput" class="form-label">Nom de Réservation</label>
+                    <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John Doe" name="Nom"> 
+                </div>
+                <div class="mb-3">
+                    <label for="DateInput" class="form-label">Choix de l'Evenement</label>
+                    <select class="form-select" id="selectEvent">
+                        <option selected>selection de l'evenement</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="mb-3">
+                    <label for="NbConvivesInput" class="form-label">Nombres de participants</label>
+                    <input type="number" class="form-control" id="NbConvivesInput" placeholder="Combien serez vous ?"  value="4" name="NbConvives"> 
+                  </div>
+                <div class="mb-3">
+                    <label for="DateInput" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="DateInput">
+                </div>
+                <div class="mb3">
+                    <label for="DateInput" class="form-label">Heure</label>
+                    <select class="form-select" id="selectHour">
+                        <option selected>selection de l'heure</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary">Réserver</button>
+                    <button type="button" class="btn btn-secondary">Annulez</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+

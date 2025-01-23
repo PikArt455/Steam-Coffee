@@ -101,9 +101,27 @@ h2{
 }
 
 .allreservation{
+    position: relative;
+    &:hover{
+        .resa{
+            filter:brightness(0.3);
+        }
+    }
+
+    .resa{
+        background-color: $secondary;
+        margin-bottom: 1.5;
+        transition: all 0.3s;
+    }
+
     a{
         display: block;
         color: black;
         padding: 10px;
     }
+}
+
+.modal-header{
+    background-color: $dark;
+    color: white;
 }

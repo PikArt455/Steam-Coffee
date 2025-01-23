@@ -12058,8 +12058,24 @@ h2, .h2 {
   margin-bottom: 10px;
 }
 
+.allreservation {
+  position: relative;
+}
+.allreservation:hover .resa {
+  filter: brightness(0.3);
+}
+.allreservation .resa {
+  background-color: #B6AC97;
+  margin-bottom: 1.5;
+  transition: all 0.3s;
+}
 .allreservation a {
   display: block;
   color: black;
   padding: 10px;
+}
+
+.modal-header {
+  background-color: #392C1E;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
