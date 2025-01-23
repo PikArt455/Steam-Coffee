@@ -5,19 +5,23 @@ html{
     position: relative;
     min-height: 100%;
 }
+
 main{
     margin-bottom: 225px;
 }
+
 footer.footer{
     padding: 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
 p{
     font-family: $font-family-serif;
     font-size: 18px;
 }
+
 .hero-scene{
     position: relative;
     margin-bottom: 15px;
@@ -31,14 +35,11 @@ p{
         background-image: url(../image/steam\ 1.jpg);
         background-size: cover;
         filter: brightness(0.3);
-
-
     }
     
     *{
         //positionne les éléments devant le ::before//
         position: relative;
-
     }
    
     .hero-scene-content{
@@ -103,22 +104,39 @@ h2{
 .allreservation{
     position: relative;
     &:hover{
+        .action-resa-buttons{
+            opacity:(1);
+        }
         .resa{
-            filter:brightness(0.3);
+            filter:brightness(1.2);
         }
     }
 
     .resa{
         background-color: $secondary;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
         transition: all 0.3s;
     }
 
     a{
+        font-family: Arial, Helvetica, sans-serif;
         display: block;
         color: black;
         padding: 10px;
     }
+
+    .action-resa-buttons{
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        opacity: (0);
+        transition: all 0.3;
+     }
 }
 
 .modal-header{
