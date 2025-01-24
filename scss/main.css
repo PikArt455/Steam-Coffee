@@ -72,7 +72,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 41, 34, 34;
-  --bs-font-sans-serif: "Cinzel", sans-serif;
+  --bs-font-sans-serif: "Trebuchet MS", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11983,7 +11983,7 @@ footer.footer {
 }
 
 h1, .h1 {
-  font-family: "Cinzel", "Cinzel", sans-serif;
+  font-family: "Cinzel", "Trebuchet MS", sans-serif;
 }
 
 p {
@@ -12058,7 +12058,12 @@ p {
   transition: all 0.3s;
 }
 
+.btn {
+  font-family: "Cinzel", "Trebuchet MS", sans-serif;
+}
+
 h2, .h2 {
+  font-family: "Cinzel", "Trebuchet MS", sans-serif;
   margin-bottom: 10px;
 }
 
