@@ -11982,6 +11982,10 @@ footer.footer {
   width: 100%;
 }
 
+h1, .h1 {
+  font-family: "Cinzel", "Cinzel", sans-serif;
+}
+
 p {
   font-family: "hind madurai", serif;
   font-size: 18px;
