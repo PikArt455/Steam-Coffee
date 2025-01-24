@@ -5,5 +5,20 @@ const btnSignin = document.getElementById("btnSignin");
 btnSignin.addEventListener("click", checkCredentials);
 
 function checkCredentials(){
-    alert("bouton cliqué");
+    //Ici, il faudra appeler l"API pour verifié les credentials en BDD
+
+    if(mailInput.value == "test@mail.com" && passwordInput.value == "123"){
+        alert("vous etes connecter");
+
+        //il faudra récupéré le vrai token
+        const token = "osidnvmodhnfvindfivnpfsvnqspfdvn";
+
+        //placer ce token en cookie
+
+        window.location.replace("/");
+    }
+    else{
+        mailInput.classList.add("is-invalid");
+        passwordInput.classList.add("is-invalid");
+    }
 }
