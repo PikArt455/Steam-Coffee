@@ -31,18 +31,18 @@ const LoadContentPage = async () => {
   const allRolesArray = actualRoute.authorize;
   
   if(allRolesArray.length > 0){
-    if(allRolesArray.include("disconnected")){
+    if(allRolesArray.includes("disconnected")){
       if(isConnected()){
         window.location.replace("/");
       }
     }
     else{
     const roleUser = getRole();
-    if(!allRolesArray.include(roleUser)){
+    if(!allRolesArray.includes(roleUser)){
       window.location.replace("/");
     }
   }
-
+}
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
   // Ajout du contenu HTML à l'élément avec l'ID "main-page"
@@ -51,7 +51,7 @@ const LoadContentPage = async () => {
   // Ajout du contenu JavaScript
   if (actualRoute.pathJS != "") {
     // Création d'une balise script
-    var scriptTag = document.createElement("script");
+    let scriptTag = document.createElement("script");
     scriptTag.setAttribute("type", "text/javascript");
     scriptTag.setAttribute("src", actualRoute.pathJS);
 
