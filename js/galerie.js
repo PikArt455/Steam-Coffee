@@ -1,8 +1,21 @@
 const galerieImage = document.getElementById("allImages");
 
+//Récupérer les information des images
+
+let titre = "titre";
+let imgSource = "../image/bouffe 1.jpg";
+ 
 let monImage = getImage("titre", "../image/bouffe 1.jpg");
 
+
+
+galerieImage.innerHTML = monImage;
+
+
+
 function getImage(titre, urlImage){
+    titre = sanitizeHtml(titre);
+    urlImage = sanitizeHtml(urlImage);
    return `<div class="col p-3">
                 <div class="image-card text-white">
                     <img src="${urlImage}" class="rounded w-100"/>
